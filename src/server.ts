@@ -7,6 +7,6 @@ app.use(express.json());
 
 app.get("/", (req, res) => res.json({ msg: "relo" }));
 
-app.use(categoriesRoutes);
+app.use("/categories", categoriesRoutes);
 
 app.listen(3333, () => console.log("Server is running!"));
